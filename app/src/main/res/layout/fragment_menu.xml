@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+    android:id="@+id/fragment_content"
+
+    >
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_gravity="center"
+    android:layout_weight="10"
+    android:gravity="center"
+    android:background="@drawable/background"
+    />
+
+<TableRow
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="3"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+
+    >
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorCamera"
+    android:gravity="center"
+
+    >
+    <ImageView
+        android:id="@+id/iv_camera"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_camera"
+        android:scaleType="centerInside"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Camera"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="30dp" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorGalerry"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/iv_gallery"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_galerry"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Gallery"
+            android:textColor="@android:color/white"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+
+</TableRow>
+
+
+</LinearLayout>

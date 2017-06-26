@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    android:padding="1dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/btn_life"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/black"
+        >
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_life" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Cuộc Sống" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_love"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/black"
+        android:layout_marginLeft="1dp"
+        >
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+
+            android:layout_gravity="center"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_love" />
+
+        <TextView
+            android:layout_width="40dp"
+
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Tình yêu" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/btn_family"
+        android:background="@android:color/black"
+        android:layout_marginLeft="1dp"
+
+        >
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_family"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Gia Đình" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/btn_friend"
+        android:background="@android:color/black"
+        android:layout_marginLeft="1dp"
+
+        >
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_friends" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Bạn bè" />
+    </LinearLayout>
+
+</LinearLayout>

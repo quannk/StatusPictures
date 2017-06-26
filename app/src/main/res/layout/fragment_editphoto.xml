@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:layout_below="@+id/tb_menu"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/canvasView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.MainActivity">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/iv_big_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp"
+            />
+    </FrameLayout>
+    <EditText
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:color/white"
+        android:hint="add your text"
+        android:textSize="15dp"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/black" />
+    <ImageView
+        android:id="@+id/iv_done_edit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tv_text"
+        android:background="@drawable/ic_done" />
+
+
+
+<TableRow android:id="@+id/tb_title"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    >
+    <include
+    layout="@layout/menu_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+</TableRow>
+    <TableRow
+        android:id="@+id/tb_menu"
+        android:layout_below="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <include
+            android:id="@+id/menu_tab"
+            layout="@layout/item_type_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tb_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:text="Edit"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_textsize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:text="TextSize"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:text="Color"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_font"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:text="Font"
+            android:textColor="@android:color/white" />
+    </TableRow>
+    <ListView
+        android:id="@+id/lv_funfact"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tb_menu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></ListView>
+
+    <ListView
+        android:id="@+id/lv_font"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_above="@+id/tb_bottom"
+        android:layout_gravity="bottom"
+        android:padding="5dp"
+        android:background="@color/colorPrimary"
+        ></ListView>
+
+    <SeekBar
+        android:id="@+id/seek_size"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/tb_bottom"
+        android:progressDrawable="@drawable/progress_seekbar"
+        android:thumb="@drawable/thumb_seekbar" />
+</RelativeLayout>
